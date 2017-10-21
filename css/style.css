@@ -1,6 +1,12 @@
-body{
-
+@font-face {
+    font-family: SukhumvitSet-Light !important;
+    src: url(fonts/SukhumvitSet-Light.ttf);
 }
+html *
+{
+    font-family: SukhumvitSet-Light;
+}
+
 .container{
             margin-top:120px;
         }
@@ -112,13 +118,13 @@ section figure figcaption {
     /*ABOUT PAGE*/
 .sidebar-top p {
     font-weight: bold;
-    font-family: SukhumvitSet-Light;
+
 }
 .sidebar-bottom h2{
-    font-family: SukhumvitSet-Light;
+
 }
 .sidebar-bottom label{
-    font-family: SukhumvitSet-Light;
+
 }
 .col-sm-5{
     margin-left: -70px;
