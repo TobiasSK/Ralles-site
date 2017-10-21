@@ -6,22 +6,19 @@ body{
         }
 /*HEADER NAVIGATION*/
         header{
-            position: absolute;
-            right:110px;
-            top:70px;
+        float: right;
         }
         #navHomeHeader{
-            position:relative;
-            top:130px;
-            left:60px;
+            position: relative;
+            top:calc(40px);
             color: #FFF;
-            padding: 5px 10px;
-            margin: 0 0 10px 0;
             -webkit-transform: rotate(90deg);
         }
         #navHomeHeader a {
-            color: #000000;
-            font-size:22px;
+            
+            color: #000000;            
+            font-size: 1.5em;
+            
             text-decoration:none;
             font-family: SukhumvitSet;
         }
@@ -133,28 +130,36 @@ section figure figcaption {
  }
 
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+@media only screen and (max-device-width:480px)  {    /* smartphones, iPhone, portrait 480x320 phones */ 
+    #navHomeHeader{
+        position: relative;
+        top:calc(60px);}
+
 section figure figcaption {
     padding: 40px;    /* padding around text */
 }
 }
 
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media only screen and (max-device-width:640px)  { 
+        #navHomeHeader{
+        position: relative;
+        top:calc(80px);}
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 
-@media (min-width:641px)  {
+@media only screen and (max-device-width:1024)  {
      /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 section figure figcaption {
     padding: 60px;    /* padding around text */
 }
 }
 
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+@media only screen and (max-device-width:1280px) { /* big landscape tablets, laptops, and desktops */ 
                             section figure figcaption {
     padding: 80px;    /* padding around text */
 }
 }
 
-@media (min-width:1281px) { /* hi-res laptops and desktops */
+@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */
                             section figure figcaption {
     padding: 90px;    /* padding around text */
 }
