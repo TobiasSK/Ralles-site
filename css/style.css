@@ -1,0 +1,161 @@
+body{
+
+}
+.container{
+            margin-top:120px;
+        }
+/*HEADER NAVIGATION*/
+        header{
+            position: absolute;
+            right:110px;
+            top:70px;
+        }
+        #navHomeHeader{
+            position:relative;
+            top:130px;
+            left:60px;
+            color: #FFF;
+            padding: 5px 10px;
+            margin: 0 0 10px 0;
+            -webkit-transform: rotate(90deg);
+        }
+        #navHomeHeader a {
+            color: #000000;
+            font-size:22px;
+            text-decoration:none;
+            font-family: SukhumvitSet;
+        }
+        a.nav-link{
+            color: black;
+            font-family: SukhumvitSet;
+        }
+
+/*LOGIN PAGE*/
+             .login_container {
+  text-align: center;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+    }
+               .containerContent{
+            padding:150px;
+        }
+        .containerContent h1{
+        width:100%;
+        font-size:80px;
+        font-family: SukhumvitSet;
+        text-transform: uppercase;
+        }
+        .containerContent h1 span{
+        font-family: SukhumvitSet;
+        display:block; 
+        margin-top:-20px;
+        }
+        #btnAccess{
+        border-radius: 6px;
+        }
+        #inputAccess{
+         border-radius: 6px;
+        }
+        .login_container{
+        display:block;
+        }
+
+             /*WORK PAGE*/
+                    .col-6{
+            width:100%;
+         height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative; 
+    margin-bottom: 20px;  
+        }
+   section figure figcaption{
+       font-family:SukhumvitSet-Light;
+       font-size: 1.2em;
+   }
+   section figure figcaption span{
+       font-family:SukhumvitSet-Light;
+       display:block; 
+       font-size:0.7em;
+   }
+  .containerDetailContent{
+        text-align:center;
+    }
+    .containerDetailVideo{
+       text-align:center;
+    }
+
+    /*RESPONSIVE WORK ITEMS*/
+    section figure {
+    position: relative;
+    margin: 0 auto; /* to center it */
+    margin-bottom: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+section figure img {
+    max-width: 100%;
+    vertical-align: middle; /* to make sure images behave like blocks */
+}
+
+section figure span{
+    display: inline-block;
+    position: relative;
+}
+
+section figure figcaption {
+    position: absolute;
+    right: 0; bottom: 0; left: 0;
+    padding: 90px;    /* padding around text */
+    text-decoration:none;
+    color: #FFF;
+}
+
+    /*ABOUT PAGE*/
+.sidebar-top p {
+    font-weight: bold;
+    font-family: SukhumvitSet-Light;
+}
+.sidebar-bottom h2{
+    font-family: SukhumvitSet-Light;
+}
+.sidebar-bottom label{
+    font-family: SukhumvitSet-Light;
+}
+.col-sm-5{
+    margin-left: -70px;
+}
+
+ /*WORK DETAIL PAGE*/
+ .containerDetailVideo iframe{
+     width: 100%;
+ }
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+section figure figcaption {
+    padding: 40px;    /* padding around text */
+}
+}
+
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+
+@media (min-width:641px)  {
+     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+section figure figcaption {
+    padding: 60px;    /* padding around text */
+}
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+                            section figure figcaption {
+    padding: 80px;    /* padding around text */
+}
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+                            section figure figcaption {
+    padding: 90px;    /* padding around text */
+}
+}
