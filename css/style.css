@@ -14,9 +14,12 @@ html *
         header{
         float: right;
         }
+        .menu{
+            top:(calc-10px);
+        }
         #navHomeHeader{
             position: relative;
-            top:calc(40px);
+            top:calc(57px);
             color: #FFF;
             -webkit-transform: rotate(90deg);
         }
@@ -24,7 +27,6 @@ html *
             
             color: #000000;            
             font-size: 1.5em;
-            
             text-decoration:none;
             font-family: SukhumvitSet;
         }
@@ -135,7 +137,7 @@ section figure figcaption {
      width: 100%;
  }
 
-
+/*MEDIA QUERIES*/
 @media only screen and (max-device-width:480px)  {    /* smartphones, iPhone, portrait 480x320 phones */ 
     #navHomeHeader{
         position: relative;
@@ -144,12 +146,18 @@ section figure figcaption {
 section figure figcaption {
     padding: 40px;    /* padding around text */
 }
+body{
+    background-color: black !important;
+}
 }
 
 @media only screen and (max-device-width:640px)  { 
         #navHomeHeader{
         position: relative;
         top:calc(80px);}
+        body{
+            background-color: blue;
+        }
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 
 @media only screen and (max-device-width:1024)  {
@@ -163,10 +171,16 @@ section figure figcaption {
                             section figure figcaption {
     padding: 80px;    /* padding around text */
 }
+body{
+    background-color: red ;
+}
 }
 
 @media only screen and (min-width:1281px) { /* hi-res laptops and desktops */
                             section figure figcaption {
     padding: 90px;    /* padding around text */
+}
+body {
+    background-color: yellow ;
 }
 }
